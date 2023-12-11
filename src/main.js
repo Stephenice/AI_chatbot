@@ -1,10 +1,13 @@
-'use strict';
+import * as dotenv from "dotenv";
+dotenv.config();
 
 function counter() {
   let seconds = 0;
   setInterval(() => {
     seconds += 1;
-    document.getElementById('app').innerHTML = `<p>You have been here for ${seconds} seconds.</p>`;
+    document.getElementById(
+      "app"
+    ).innerHTML = `<p>You have been here for ${seconds} seconds.</p>`;
   }, 1000);
 }
 
